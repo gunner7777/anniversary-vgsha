@@ -74,11 +74,27 @@
   }
 }
 
+@include mq-max(1416px) {
+  .Header {
+    &-Timer {
+      left: 37%;
+    }
+  }
+}
+
+@include mq-max(1380px) {
+  .Header {
+    &-Timer {
+      left: 38%;
+    }
+  }
+}
+
 @include mq-max(1313px) {
   .Header {
     &-Timer {
-      width: 43%;
-      left: 34%;
+      width: 41%;
+      left: 37%;
     }
   }
 }
@@ -86,7 +102,7 @@
 @include mq-max(1252px) {
   .Header {
     &-Timer {
-      width: 42%;
+      width: 40%;
     }
   }
 }
@@ -94,7 +110,7 @@
 @include mq-max(1230px) {
   .Header {
     &-Timer {
-      left: 35%;
+      left: 38%;
     }
   }
 }
@@ -102,26 +118,26 @@
 @include mq-max(1199px) {
   .Header {
     &-Timer {
-      width: 42%;
-      left: 35%;
+      width: 40%;
+      left: 38%;
     }
   }
 }
 
-@include mq-max(1185px) {
+/* @include mq-max(1185px) {
   .Header {
     &-Timer {
       width: 45%;
       left: 34%;
     }
   }
-}
+} */
 
 @include mq-max(1122px) {
   .Header {
     &-Timer {
       width: 44%;
-      left: 32%;
+      left: 36%;
     }
   }
 }
@@ -129,20 +145,20 @@
 @include mq-max(1074px) {
   .Header {
     &-Timer {
-      width: 42%;
-      left: 34%;
+      width: 40%;
+      left: 36%;
     }
   }
 }
 
-/* @include mq-max(1022px) {
+@include mq-max(1010px) {
   .Header {
     &-Timer {
-      width: 44%;
-      left: 31%;
+      width: 39%;
+      left: 37%;
     }
   }
-} */
+}
 
 @include mq-max(991px) {
   .Header {

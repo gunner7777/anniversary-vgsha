@@ -142,6 +142,10 @@
 @include mq-max(310px) {
   .Logo {
     flex-flow: column wrap;
+
+    &-Text {
+      text-align: center;
+    }
   }
 }
 
@@ -153,7 +157,6 @@
 
     &-Text {
       font-size: 1.6rem;
-      text-align: center;
     }
 
     &-Number {
