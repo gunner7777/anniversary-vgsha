@@ -1,0 +1,23 @@
+.PageNav {
+  margin-top: 30px;
+}
+
+.page-numbers {
+  font-size: 1rem;
+  color: $text;
+  padding: 2px 6px;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+
+  &.current,
+  &:hover {
+    background-color: $accent-1;
+    color: $light-on-dark;
+  }
+}
+
+@include mq-max(991px) {
+  .PageNav {
+    margin-bottom: 40px;
+  }
+}

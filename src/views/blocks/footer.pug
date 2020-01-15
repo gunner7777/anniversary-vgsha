@@ -1,0 +1,46 @@
+mixin footer-menu-item(text)
+  li.FooterMenu-Item
+    a.FooterMenu-Link(href="#")= text
+
+
+footer.Footer.Container
+  .Block
+    .FooterSection.FooterSection-MenuAbout.Col12.ColSm6.ColMd4.ColLg4
+      h4.FooterSection-Title Юбилей Вятской ГСХА
+      ul.FooterMenu
+        +footer-menu-item("Главная")
+        +footer-menu-item("Целевые объекты")
+        +footer-menu-item("Пожертвования")
+        +footer-menu-item("Официальный сайт Вятской ГСХА")
+
+    .FooterSection.FooterSection-MenuPodgotovka.Col12.ColSm6.ColMd4.ColLg4
+      h4.FooterSection-Title Ход подготовки
+      ul
+        +footer-menu-item("История")
+        +footer-menu-item("Персоналии")
+        +footer-menu-item("Подразделения")
+        +footer-menu-item("Объекты")
+        +footer-menu-item("Расходование средств")
+
+    .FooterSection.FooterSection-Contacts.Col12.ColSm6.ColMd4.ColLg4
+      h4.FooterSection-Title Контакты
+      p.FooterSection-Line
+        i.fas.fa-phone.Contacts-Icon
+        span +7 (8332) 54-86-33
+      p.FooterSection-Line
+        i.fas.fa-envelope.Contacts-Icon
+        span info@vgsha.info
+      p.FooterSection-Line
+        span.SocialIcon.SocialIcon-Vk.SocialIcon_Header
+          i.fab.fa-vk.SocialIcon-Svg
+        span.SocialIcon.SocialIcon-Youtube.SocialIcon_Header
+          i.fab.fa-youtube.SocialIcon-Svg
+        span.SocialIcon.SocialIcon-Instagram.SocialIcon_Header
+          i.fab.fa-instagram.SocialIcon-Svg
+        span.SocialIcon.SocialIcon-Twitter.SocialIcon_Header
+          i.fab.fa-twitter.SocialIcon-Svg
+        span.SocialIcon.SocialIcon-Facebook.SocialIcon_Header
+          i.fab.fa-facebook-f.SocialIcon-Svg
+
+  .Copyright.Text_Center
+    p.Copyright-Text &copy; ФГБОУ ВО Вятская ГСХА, 2019

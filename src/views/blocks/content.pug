@@ -1,0 +1,82 @@
+mixin article-preview(title, author, date, rubric, text)
+  article.ArticleView
+    h3.ArticleView-Title
+      a.ArticleView-Link(href="#")= title
+    div.ArticleView-Info
+      p.ArticleView-Author
+        a(href="#")= author
+      p.ArticleView-Date= date
+      p.ArticleView-Rubric
+        a(href="#")= rubric
+    div.ArticleView-Article
+      p.ArticleView-Text= text
+      p.ArticleView-Text= text
+      p.ArticleView-Text= text
+      ul.ArticleView-Text
+        li First
+        li Second
+
+      div.wp-block-file
+        a(href="#") Link file
+        a.wp-block-file__button(href="#") Download
+
+      p
+        a(href="#").ArticleView-Readmore Read more
+
+section.Content.Container
+  .Content-Main.Col12.ColMd12.ColLg9.ColXl9
+    .ArticleView-Outer
+      h1.ArticleView-RubricName Rubric's name
+    .ArticleView-Outer
+      +article-preview(
+        "Lorem ipsum dolor sit ametg",
+        "Petrov AV, Ivanov PI",
+        "12.12.3111",
+        "rubric",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ut molestias autem commodi. Illum sequi, neque error repellat dolores non quas, explicabo adipisci cum laboriosam doloremque quidem quam hic?"
+      )
+
+      +article-preview(
+        "Lorem ipsum dolor sit amet",
+        "Petrov AV, Ivanov PI",
+        "12.12.3111",
+        "rubric",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel ut molestias autem commodi. Illum sequi, neque error repellat dolores non quas, explicabo adipisci cum laboriosam doloremque quidem quam hic?"
+      )
+
+    nav.PageNav.Text_Center
+      a.page-numbers(href="#") Назад
+      a.page-numbers(href="#") 1
+      span.page-numbers.current 2
+      a.page-numbers(href="#") 3
+      a.page-numbers(href="#") 4
+      a.page-numbers(href="#") Далее
+
+  .Content-Secondary.Col12.ColMd12.ColLg3.ColXl3
+    .SecondaryBlock.Text_Center
+      h3.SecondaryBlock-Title Добровольные пожертвования
+      .SecondaryBlock-Content
+        p.SecondaryBlock-Text Добровольные пожертвования по QR-коду через мобильное приложение Сбербанк Онлайн
+        img.SecondaryBlock-Img(src="/images/qrcode.png", alt="QR")
+        p.SecondaryBlock-SmallText Внимание! При оплате взимается комиссия согласно тарифам банка
+
+    .SecondaryBlock.Text_Center
+      h3.SecondaryBlock-Title 2Добровольные пожертвования2
+      .SecondaryBlock-Content
+        p.SecondaryBlock-Text Добровольные пожертвования по QR-коду через мобильное приложение Сбербанк Онлайн
+        img.SecondaryBlock-Img(src="/images/qrcode.png", alt="QR")
+        p.SecondaryBlock-SmallText Внимание! При оплате взимается комиссия согласно тарифам банка
+
+    .SecondaryBlock.Text_Center
+      h3.SecondaryBlock-Title 3Добровольные пожертвования3
+      .SecondaryBlock-Content
+        p.SecondaryBlock-Text Добровольные пожертвования по QR-коду через мобильное приложение Сбербанк Онлайн
+        img.SecondaryBlock-Img(src="/images/qrcode.png", alt="QR")
+        p.SecondaryBlock-SmallText Внимание! При оплате взимается комиссия согласно тарифам банка
+
+    .SecondaryBlock.Text_Center
+      h3.SecondaryBlock-Title 4Добровольные пожертвования4
+      .SecondaryBlock-Content
+        p.SecondaryBlock-Text Добровольные пожертвования по QR-коду через мобильное приложение Сбербанк Онлайн
+        img.SecondaryBlock-Img(src="/images/qrcode.png", alt="QR")
+        p.SecondaryBlock-SmallText Внимание! При оплате взимается комиссия согласно тарифам банка

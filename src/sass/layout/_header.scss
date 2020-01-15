@@ -1,0 +1,167 @@
+.Header {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: $base;
+  width: 100%;
+  color: $light-on-dark;
+  position: relative;
+
+  &-Timer {
+    position: absolute;
+    width: 40%;
+    top: 0;
+  }
+}
+
+/* @include mq-max(1700px) {
+  .Header {
+    &-Timer {
+      width: 42%;
+      left: 32%;
+    }
+  }
+}
+
+@include mq-max(1461px) {
+  .Header {
+    &-Timer {
+      width: 45%;
+    }
+  }
+} */
+
+/* @include mq-max(1399px) {
+  .Header {
+    &-Timer {
+      left: 34%;
+    }
+  }
+} */
+
+/* @include mq-max(1290px) {
+  .Header {
+    &-Timer {
+      width: 44%;
+    }
+  }
+} */
+
+@include mq-max(1225px) {
+  .Header {
+    &-Timer {
+      width: 45%;
+      left: 33%;
+    }
+  }
+}
+
+@include mq-max(1198px) {
+  .Header {
+    &-Timer {
+      width: 46%;
+      left: 32%;
+    }
+  }
+}
+
+/** with installed plugin **/
+@include mq-max(1700px) {
+  .Header {
+    &-Timer {
+      width: 41%;
+      left: 35%;
+    }
+  }
+}
+
+@include mq-max(1313px) {
+  .Header {
+    &-Timer {
+      width: 43%;
+      left: 34%;
+    }
+  }
+}
+
+@include mq-max(1252px) {
+  .Header {
+    &-Timer {
+      width: 42%;
+    }
+  }
+}
+
+@include mq-max(1199px) {
+  .Header {
+    &-Timer {
+      width: 45%;
+      left: 32%;
+    }
+  }
+}
+
+@include mq-max(1185px) {
+  .Header {
+    &-Timer {
+      width: 45%;
+      left: 33%;
+    }
+  }
+}
+
+@include mq-max(1122px) {
+  .Header {
+    &-Timer {
+      width: 47%;
+      left: 29%;
+    }
+  }
+}
+
+@include mq-max(1074px) {
+  .Header {
+    &-Timer {
+      width: 46%;
+      left: 30%;
+    }
+  }
+}
+
+@include mq-max(1022px) {
+  .Header {
+    &-Timer {
+      width: 44%;
+      left: 31%;
+    }
+  }
+}
+
+@include mq-max(991px) {
+  .Header {
+    padding-bottom: 20px;
+
+    &-Logo {
+      order: 0;
+    }
+
+    &-Info {
+      order: 1;
+    }
+
+    &-Timer {
+      position: relative;
+      margin-top: 15px;
+      width: 100%;
+      left: 0;
+      order: 2;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Header {
+    &-Info {
+      margin-top: 15px;
+    }
+  }
+}

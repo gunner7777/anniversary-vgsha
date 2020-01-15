@@ -1,0 +1,37 @@
+.Search {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+
+  &-IconWrapper {
+    font-size: 1.5rem;
+  }
+
+  &-Form {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 35px;
+    transition: all .3s ease;
+    position: absolute;
+    right: 0;
+    width: 70%;
+  }
+}
+
+@include mq-max(767px) {
+  .Search {
+    &-Form {
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+  }
+}
+
+@include mq-max(420px) {
+  .Search {
+    &-Form {
+      width: 100%;
+    }
+  }
+}

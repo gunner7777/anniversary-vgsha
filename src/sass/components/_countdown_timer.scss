@@ -1,0 +1,65 @@
+.Timer {
+  padding: 15px 10px 10px;
+  background-color: $accent-1;
+
+  &-Title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  // del in prod
+  &-Score {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+}
+
+@include mq-max(1399px) {
+  .Timer {
+    &-Title {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@include mq-max(1252px) {
+  .Timer {
+    &-Title {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@include mq-max(1074px) {
+  .Timer {
+    &-Title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@include mq-max(1022px) {
+  .Timer {
+    &-Title {
+      font-size: 1.1rem;
+      /* margin-bottom: 10px; */
+    }
+  }
+}
+
+@include mq-max(991px) {
+  .Timer {
+    /* width: 50%; */
+    margin: 0 auto;
+  }
+}
+
+@include mq-max(279px) {
+  .Timer {
+    &-Title {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.FooterMenu {
+  &-Item {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-Link {
+    color: $light-on-dark;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s ease;
+
+    &:hover {
+      border-bottom: 1px solid $light-on-dark;
+    }
+  }
+}
+
+@include mq-max(260px) {
+  .FooterMenu {
+    &-Item {
+      font-size: 0.95rem;
+    }
+  }
+}

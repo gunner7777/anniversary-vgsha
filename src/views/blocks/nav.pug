@@ -1,0 +1,17 @@
+mixin main-menu-item(text)
+  li.TopMenu-Item
+    a.TopMenu-Link.TopMenu-Link_Active(href="#")= text
+
+//mixin sub-menu-item(text)
+  li.SubMenu-Item
+    a.SubMenu-Link(href="#")= text
+
+nav.Nav
+  span.MobileMenu-Button
+    i.fas.fa-bars
+  ul.TopMenu
+    +main-menu-item("Главная")
+    +main-menu-item("Ход подготовки")
+    +main-menu-item("Целевые объекты")
+    +main-menu-item("Пожертвования")
+    +main-menu-item("Контакты")

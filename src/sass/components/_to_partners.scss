@@ -1,0 +1,19 @@
+.ToPartners {
+  background-color: $accent-2;
+  padding: 50px 15px;
+  font-size: 1.1rem;
+
+  & *:not(h3) {
+    margin: 5px 0;
+  }
+
+  &-Title {
+    margin-bottom: 15px;
+  }
+}
+
+@include mq-max(767px) {
+  .ToPartners {
+    font-size: 1rem;
+  }
+}

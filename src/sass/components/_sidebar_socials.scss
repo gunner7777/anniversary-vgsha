@@ -1,0 +1,25 @@
+.SidebarSocials {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  &-Item {
+    color: $light-on-dark;
+    width: 70%;
+    margin: 4px 0;
+    padding: 10px 0;
+    font-size: 1.1rem;
+
+    &_Vk {
+      background-color: $vk_bg;
+    }
+
+    &_Fb {
+      background-color: $facebook_bg;
+    }
+  }
+
+  &-Svg {
+    margin-right: 10px;
+  }
+}

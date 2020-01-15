@@ -1,0 +1,129 @@
+.Logo {
+  display: flex;
+  align-items: center;
+  width: 70%;
+
+  &-Text {
+    position: relative;
+    top: 0;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-left: 20px;
+    color: $light-on-dark;
+  }
+
+  &-Img {
+    /* width: 200px; */
+    width: 170px;
+    min-width: 60px;
+  }
+
+  &-Number {
+    position: absolute;
+    left: -63px;
+    font-size: 3.3rem;
+    top: -8px;
+  }
+}
+
+@include mq-max(1290px) {
+  .Logo {
+    &-Text {
+      font-size: 2.3rem;
+    }
+
+    &-Number {
+      left: -60px;
+      font-size: 2.8rem;
+      top: -5px;
+    }
+  }
+}
+
+@include mq-max(1230px) {
+  .Logo {
+    &-Img {
+      width: 170px;
+    }
+  }
+}
+
+@include mq-max(1122px) {
+  .Logo {
+    &-Img {
+      width: 135px;
+    }
+
+    &-Text {
+      font-size: 2rem;
+    }
+
+    &-Number {
+      left: -42px;
+      font-size: 2.2rem;
+      top: -2px;
+    }
+  }
+}
+
+@include mq-max(991px) {
+  .Logo {
+    &-Img {
+      width: 170px;
+    }
+
+    &-Text {
+      font-size: 2.3rem;
+      margin-left: 13px;
+    }
+
+    &-Number {
+      left: -50px;
+      font-size: 2.6rem;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Logo {
+    width: 100%;
+
+    &-Img {
+      width: 125px;
+    }
+
+    &-Text {
+      font-size: 1.8rem;
+      margin-left: 13px;
+    }
+
+    &-Number {
+      left: -41px;
+      font-size: 2.1rem;
+    }
+  }
+}
+
+@include mq-max(575px) {
+  .Logo {
+    justify-content: center;
+  }
+}
+
+@include mq-max(279px) {
+  .Logo {
+    &-Img {
+      width: 110px;
+    }
+
+    &-Text {
+      font-size: 1.6rem;
+    }
+
+    &-Number {
+      left: -40px;
+      font-size: 1.9rem;
+      top: -4px;
+    }
+  }
+}

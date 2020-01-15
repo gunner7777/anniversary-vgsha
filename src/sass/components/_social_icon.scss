@@ -1,0 +1,58 @@
+.SocialIcon {
+  border-radius: 100%;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  /*  color: $white; */
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &_Header {
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-Svg {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $light-on-dark;
+  }
+
+  &-Vk {
+    background-color: $vk_bg;
+  }
+
+  &-Twitter {
+    background-color: $twitter_bg;
+  }
+
+  &-Youtube {
+    background-color: $youtube_bg;
+  }
+
+  &-Instagram {
+    background-color: $instagram_bg;
+  }
+
+  &-Facebook {
+    background-color: $facebook_bg;
+  }
+}

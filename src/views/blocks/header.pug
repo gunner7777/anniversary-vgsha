@@ -1,0 +1,46 @@
+mixin CountdownItem(numbers, text)
+  .ScoreItem.Text_Center
+    p.ScoreItem-Number= numbers
+    p.ScoreItem-Text= text
+
+header.Header.Container
+  .Block
+    .Header-Logo.Col12.ColSm6.ColMd8.ColLg8
+      a.Logo(href="/")
+        .Logo-Img
+          img(src="../images/vgsha-logo.png")
+        div.Logo-Text
+          p
+            span.Logo-Number 90
+            | Вятской
+          p ГСХА
+    .Header-Timer.Col12.ColMd12
+      .Timer
+        p.Timer-Title.Text_Center До празднования 90-летия Вятской ГСХА осталось
+        .Timer-Score
+          +CountdownItem("79", "дней")
+          +CountdownItem("19", "часов")
+          +CountdownItem("51", "минут")
+          +CountdownItem("45", "секунд")
+
+
+    .Header-Info.Col12.ColSm6.ColMd4.ColLg4
+      .Contacts
+        p.Contacts-Line
+            i.fas.fa-envelope.Contacts-Icon
+            span info@vgsha.info
+        p.Contacts-Line
+          i.fas.fa-phone.Contacts-Icon
+          span +7 (8332) 54-86-33
+
+        .Contacts-Line.Contacts-Social
+          a(href="https://vk.com/vyatskayagsha",target='_blank').SocialIcon.SocialIcon-Vk.SocialIcon_Header
+            i.fab.fa-vk.SocialIcon-Svg
+          a(href="https://www.youtube.com/channel/UCmghVwLSe6uDoVXjnKxvWSw",target='_blank').SocialIcon.SocialIcon-Youtube.SocialIcon_Header
+            i.fab.fa-youtube.SocialIcon-Svg
+          a(href="https://twitter.com/VSAA_KIROV",target='_blank').SocialIcon.SocialIcon-Instagram.SocialIcon_Header
+            i.fab.fa-instagram.SocialIcon-Svg
+          a(href="https://www.instagram.com/vsaa.official/",target='_blank').SocialIcon.SocialIcon-Twitter.SocialIcon_Header
+            i.fab.fa-twitter.SocialIcon-Svg
+          a(href="https://www.facebook.com/people/%D0%92%D1%8F%D1%82%D1%81%D0%BA%D0%B0%D1%8F-%D0%93%D1%81%D1%85%D0%B0/100010179973694",target='_blank').SocialIcon.SocialIcon-Facebook.SocialIcon_Header
+            i.fab.fa-facebook-f.SocialIcon-Svg

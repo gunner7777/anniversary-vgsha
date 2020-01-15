@@ -1,0 +1,47 @@
+/*
+Theme Name: Anniversary Vgsha
+Author: CIT
+Description: Anniversary_Vgsha theme for 90 jubilee of VGSHA
+Version: 0.1.0
+Text Domain: anniversary-vgsha
+*/
+
+@import "../vendor/normalize.css";
+
+@import "./utils/mixin";
+
+/* base */
+@import "./base/colors";
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/grid";
+@import "./base/common";
+
+/* layout */
+@import "./layout/header";
+@import "./layout/content";
+@import "./layout/nav";
+@import "./layout/footer";
+
+/* components */
+@import "./components/logo";
+@import "./components/countdown_timer";
+@import "./components/score_item";
+@import "./components/contacts";
+@import "./components/search";
+@import "./components/social_icon";
+@import "./components/article_view";
+@import "./components/footer_section";
+@import "./components/footer_menu";
+/* @import "./components/input"; */
+@import "./components/button";
+/* @import "./components/language_switcher"; */
+@import "./components/copyright";
+@import "./components/menu";
+@import "./components/page-navigation";
+@import "./components/not_found";
+/* @import "./components/search_page"; */
+@import "./components/to_partners";
+@import "./components/secondary_block";
+@import "./components/tagslist";
+@import "./components/sidebar_socials";

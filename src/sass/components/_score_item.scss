@@ -1,0 +1,21 @@
+.ScoreItem {
+  font-weight: 700;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &-Number {
+    font-size: 3.1rem;
+  }
+
+  &-Text {
+    font-size: 1.3rem;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

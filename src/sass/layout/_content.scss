@@ -1,0 +1,46 @@
+.Content {
+  /* flex-grow: 1; */
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 55px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  &-Secondary {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }
+}
+
+@include mq-max(1200px) {
+  .Content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@include mq-max(991px) {
+  .Content {
+    &-Secondary {
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .Content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@include mq-max(574px) {
+  .Content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

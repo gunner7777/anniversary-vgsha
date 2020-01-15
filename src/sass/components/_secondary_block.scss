@@ -1,0 +1,60 @@
+.SecondaryBlock {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+
+  &-Content {
+    padding: 0 10px;
+  }
+
+  &-Title {
+    font-size: 1.4rem;
+  }
+
+  &-Text,
+  &-SmallText {
+    margin: 5px 0;
+  }
+
+  &-SmallText {
+    font-size: 0.9rem;
+  }
+
+  &-Img {
+    width: 60%;
+    min-width: 165px;
+  }
+}
+
+@include mq-max(991px) {
+  .SecondaryBlock {
+    flex-basis: 33%;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include mq-max(767px) {
+  .SecondaryBlock {
+    flex-basis: 50%;
+  }
+}
+
+@include mq-max(460px) {
+  .SecondaryBlock {
+    flex-basis: 100%;
+  }
+}
+
+@include mq-max(400px) {
+  .SecondaryBlock {
+    &-Title {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.TagsList {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+  margin-top: 25px;
+
+  &-Item {
+    margin-right: 8px;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      padding: 5px 10px;
+      color: $text;
+      background-color: $accent-3-opacity;
+      line-height: 28px;
+    }
+  }
+}

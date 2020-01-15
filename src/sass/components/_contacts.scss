@@ -1,0 +1,31 @@
+.Contacts {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &-Icon {
+    margin-right: 5px;
+  }
+
+  &-Social {
+    margin: 5px 0;
+    position: relative;
+  }
+
+  &-Line {
+    font-size: 1.1rem;
+    position: relative;
+    text-align: right;
+  }
+
+  &-Line:first-child {
+    margin-bottom: 5px;
+  }
+}
+
+@include mq-max(575px) {
+  .Contacts {
+    &-Line {
+      text-align: center;
+    }
+  }
+}

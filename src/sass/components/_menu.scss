@@ -1,0 +1,165 @@
+.TopMenu {
+  text-align: center;
+
+  &-Item {
+    display: inline-block;
+    position: relative;
+  }
+
+  &-Link {
+    display: block;
+    padding: 15px 20px;
+    color: $text;
+    border-top: 4px solid $light-on-dark;
+    transition: border-top 0.2s ease;
+
+    &:hover {
+      border-top: 4px solid $accent-1;
+    }
+
+    &_Active {
+      border-top: 4px solid $accent-1;
+    }
+  }
+
+  &-Icon {
+    margin-left: 7px;
+  }
+}
+
+/* .SubMenu {
+  height: 0px;
+  position: absolute;
+  background-color: $white;
+  border: 1px solid $light_gray;
+  width: 250px;
+  box-shadow: 0 6px 12px $shadow;
+  overflow: hidden;
+  visibility: hidden;
+
+  &_Show {
+    height: auto;
+    visibility: visible;
+  }
+
+  &:hover {
+    height: auto;
+    visibility: visible;
+  }
+
+  &-Link {
+    display: block;
+    padding: 10px 0;
+    color: $text;
+    transition: background-color .2s ease;
+
+    &:hover {
+      background-color: $dark_green;
+      color: $white;
+    }
+  }
+} */
+
+.MobileMenu {
+  &-Button {
+    display: none;
+  }
+}
+
+@include mq-max(684px) {
+  .TopMenu {
+    &-Link {
+      padding: 15px 15px;
+    }
+  }
+}
+
+@include mq-max(634px) {
+  .TopMenu {
+    &-Link {
+      padding: 15px 10px;
+    }
+  }
+}
+
+@include mq-max(584px) {
+  .MobileMenu {
+    &-Button {
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 5;
+    }
+  }
+
+  .TopMenu {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    width: 75%;
+    right: 15px;
+    padding-top: 30px;
+    text-align: left;
+    background-color: $light-on-dark;
+    border: 1px solid $accent-3;
+    box-shadow: 0 6px 12px rgba($dark-on-light, 0.3);
+    transition: all 0.4s ease;
+    z-index: -1;
+
+    &_Show {
+      right: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+
+    &-Item {
+      display: block;
+    }
+
+    &-Link {
+      border: none;
+
+      &:hover {
+        border-top: none;
+        color: $accent-1;
+      }
+
+      &_Active {
+        color: $accent-1;
+      }
+
+      &_Open {
+        & > .TopMenu-Icon {
+          transform: rotate(180deg);
+        }
+
+        & + .SubMenu {
+          height: auto;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  .SubMenu {
+    height: 0;
+    visibility: hidden;
+    position: relative;
+    width: calc(100% - 35px);
+    background-color: $light-on-dark;
+    margin-left: 30px;
+    border: none;
+    box-shadow: none;
+
+    &-Link {
+      &:hover {
+        background-color: inherit;
+        color: $accent-1;
+      }
+    }
+  }
+}

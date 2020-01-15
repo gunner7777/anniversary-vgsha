@@ -1,0 +1,11 @@
+.Nav {
+  border-bottom: 1px solid $accent-3;
+  position: relative;
+}
+
+@include mq-max(584px) {
+  .Nav {
+    min-height: 53px;
+    border: none;
+  }
+}

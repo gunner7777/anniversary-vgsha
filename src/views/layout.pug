@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(
+      rel="stylesheet"
+      href="css/style.css"
+    )
+    script(
+      src="vendor/fontawesome.solid.js"
+      defer
+    )
+    script(
+      src="vendor/fontawesome.brands.js"
+      defer
+    )
+    script(
+      data-search-pseudo-elements
+      src="vendor/fontawesome.js"
+      defer
+    )
+    title Вятской ГСХА 90!
+  body
+    include blocks/header.pug
+    include blocks/nav.pug
+    include blocks/promo.pug
+    //include blocks/not_found.pug
+    //include blocks/not_content.pug
+    include blocks/content.pug
+    //include blocks/search_result.pug
+    include blocks/footer.pug
+    script(src="js/script.js")
