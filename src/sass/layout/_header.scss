@@ -91,11 +91,19 @@
   }
 }
 
+@include mq-max(1230px) {
+  .Header {
+    &-Timer {
+      left: 35%;
+    }
+  }
+}
+
 @include mq-max(1199px) {
   .Header {
     &-Timer {
-      width: 45%;
-      left: 32%;
+      width: 42%;
+      left: 35%;
     }
   }
 }
@@ -104,7 +112,7 @@
   .Header {
     &-Timer {
       width: 45%;
-      left: 33%;
+      left: 34%;
     }
   }
 }
@@ -112,8 +120,8 @@
 @include mq-max(1122px) {
   .Header {
     &-Timer {
-      width: 47%;
-      left: 29%;
+      width: 44%;
+      left: 32%;
     }
   }
 }
@@ -121,20 +129,20 @@
 @include mq-max(1074px) {
   .Header {
     &-Timer {
-      width: 46%;
-      left: 30%;
+      width: 42%;
+      left: 34%;
     }
   }
 }
 
-@include mq-max(1022px) {
+/* @include mq-max(1022px) {
   .Header {
     &-Timer {
       width: 44%;
       left: 31%;
     }
   }
-}
+} */
 
 @include mq-max(991px) {
   .Header {
