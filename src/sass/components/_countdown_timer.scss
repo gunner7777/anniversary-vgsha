@@ -1,6 +1,7 @@
 .Timer {
   padding: 15px 10px 10px;
-  background-color: $accent-1;
+  background-color: $base;
+  color: $light-on-dark;
 
   &-Title {
     font-size: 1.5rem;

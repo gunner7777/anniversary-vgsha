@@ -9,16 +9,16 @@
   &-Link {
     display: block;
     padding: 15px 20px;
-    color: $text;
-    border-top: 4px solid $light-on-dark;
+    color: $light-on-dark;
+    border-top: 4px solid $base;
     transition: border-top 0.2s ease;
 
     &:hover {
-      border-top: 4px solid $accent-1;
+      border-top: 4px solid $light-on-dark;
     }
 
     &_Active {
-      border-top: 4px solid $accent-1;
+      border-top: 4px solid $light-on-dark;
     }
   }
 
@@ -122,6 +122,7 @@
 
     &-Link {
       border: none;
+      color: $text;
 
       &:hover {
         border-top: none;

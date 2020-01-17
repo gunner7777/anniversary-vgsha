@@ -1,10 +1,12 @@
 .Nav {
-  border-bottom: 1px solid $accent-3;
+  /* border-bottom: 1px solid $accent-3; */
+  background-color: $base;
   position: relative;
 }
 
 @include mq-max(584px) {
   .Nav {
+    background-color: $light-on-dark;
     min-height: 53px;
     border: none;
   }
